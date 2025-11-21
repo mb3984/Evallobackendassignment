@@ -1,0 +1,29 @@
+### REGISTER USER
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Madhu",
+  "email": "madhu@example.com",
+  "password": "123456"
+}
+
+###
+
+### LOGIN USER
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "madhu@example.com",
+  "password": "123456"
+}
+
+###
+
+### GET PROFILE (Protected)
+GET http://localhost:5000/api/auth/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJtYWRodUBleGFtcGxlLmNvbSIsImlhdCI6MTc2MzcwMDc1NSwiZXhwIjoxNzYzNzE4NzU1fQ.DTolFasa-rU9gHxzeEQGKOrbY9j9BLRqGM9dmJTKX1w
+
+
+
